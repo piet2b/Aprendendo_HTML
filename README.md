@@ -1,2 +1,3 @@
-# Aprendendo_HTML
-Atividades para exercitar meu conhecimento de HTML
+# Atividades em HTML
+
+## Para exercitar meu conhecimento de HTML
