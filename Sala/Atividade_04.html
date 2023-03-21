@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário de cadastro de vendas</h1>
+    <form
+      action="processar_cadastro.php"
+      method="get"
+      enctype="multipart/form-data"
+    >
+      <br />
+      <label for="nome_vendedor">Nome do vendedor:</label>
+      <select id="nome_vendedor" name="nome_vendedor">
+        <option value="João">João</option>
+        <option value="Maria">Maria</option>
+        <option value="Pedro">Pedro</option>
+        <option value="Ana">Ana</option>
+      </select>
+      <br />
+      <fieldset style="width: fit-content">
+        <legend>Canal de venda:</legend>
+
+        <div>
+          <input
+            type="radio"
+            id="presencial"
+            name="canal_venda"
+            value="presencial"
+          />
+          <label for="presencial">Presencial</label>
+        </div>
+        <br />
+        <div>
+          <input
+            type="radio"
+            id="whatsapp"
+            name="canal_venda"
+            value="whatsapp"
+          />
+          <label for="whatsapp">Whatsapp</label>
+        </div>
+        <br />
+        <div>
+          <input
+            type="radio"
+            id="telefone"
+            name="canal_venda"
+            value="telefone"
+          />
+          <label for="telefone">Telefone</label>
+        </div>
+        <br />
+        <div>
+          <input type="radio" id="email" name="canal_venda" value="email" />
+          <label for="email">E-mail</label>
+        </div>
+      </fieldset>
+
+      <label for="valor_venda">Valor da venda:</label>
+      <input
+        type="number"
+        id="valor_venda"
+        name="valor_venda"
+        min="0"
+        step="100"
+        required
+      />
+      <br />
+
+      <label for="comprovante">Comprovante de transferência bancária:</label>
+      <input
+        type="file"
+        id="comprovante"
+        name="comprovante"
+        accept="application/pdf"
+        required
+      />
+      <br />
+
+      <label for="descricao_itens">Descrição dos itens vendidos:</label>
+      <textarea id="descricao_itens" name="descricao_itens" rows="5"></textarea>
+      <br />
+
+      <label for="nome_cliente">Nome do cliente:</label>
+      <input type="text" id="nome_cliente" name="nome_cliente" required />
+      <br />
+
+      <label for="cpf_cliente">CPF do cliente:</label>
+      <input
+        type="text"
+        id="cpf_cliente"
+        name="cpf_cliente"
+        maxlength="11"
+        required
+      />
+      <br />
+
+      <div>
+        <input
+          type="checkbox"
+          id="ciencia_dados"
+          name="ciencia_dados"
+          required
+        />
+        <label for="ciencia_dados"
+          >Declaro que os dados acima são verdadeiros.</label
+        >
+      </div>
+      <br />
+
+      <label for="senha">Sua senha:</label>
+      <input type="password" id="senha" name="senha" required />
+      <br />
+
+      <button type="submit" onclick="alert('Dados recebidos.')">Enviar</button>
+    </form>
+  </body>
+</html>
