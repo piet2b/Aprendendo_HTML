@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      #nav {
+        position: relative;
+        display: inline-block;
+      }
+      #map {
+        position: absolute;
+        top: 30px;
+        right: 17px;
+      }
+      #destination {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+
+      #destination h2 {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      #destination img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Travel Page!</h1>
+    </header>
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=18HEg5KrSQn3LpxYrhfwLUpNfKI8Nzyw&ehbc=2E312F"
+        width="480"
+        height="425"
+      ></iframe>
+    </div>
+    <div id="nav">
+      <nav>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#destination">Pick a destination</a></li>
+          <li><a href="#do">Must-do's in Bali</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="destination">
+      <h2>Batur</h2>
+      <img
+        src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/af/72.jpg"
+        alt="Foto do destino Batur"
+      />
+
+      <h2>Canggu</h2>
+      <img
+        src="https://a.cdn-hotels.com/gdcs/production75/d966/8994658f-13ad-4106-bde4-856450359f47.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+        alt="Foto do destino Canggu"
+      />
+
+      <h2>Nusa Penida</h2>
+      <img
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f5/3e/e5/nusa-penida-island.jpg?w=1200&h=-1&s=1"
+        alt="Foto do destino Nusa Penida"
+      />
+    </div>
+  </body>
+</html>
