@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fillup form</title>
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <h1>Laboratory Tests fillup form</h1>
+        <p>
+          The Laboratory Tests Fill-up Form is a simple and convenient document
+          for patients and healthcare providers to request and record laboratory
+          tests. It includes sections for patient information, test details, and
+          medical history, making it easy to document the tests to be performed
+          and any special instructions.
+        </p>
+      </div>
+
+      <form>
+        <div ="full-width">
+          <div>
+            <label for="Patient_ID">Patient ID</label>
+            <input
+              type="text"
+              name="number"
+              placeholder="1111111-1"
+              class="input-field"
+            />
+          </div>
+        </div>
+        <div class="full-width">
+          <div>
+            <label for="first_name">First name</label>
+            <input
+              type="text"
+              name="first_name"
+              placeholder="John"
+              class="input-field"
+            />
+          </div>
+          <div class="col-half">
+            <label for="last_name">Last name</label>
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Smith"
+              class="input-field"
+            />
+          </div>
+        </div>
+        <div class="full-width">
+          <div class="col-half">
+            <label for="last_name">Date of Birth</label>
+            <input
+              type="date"
+              name="last_name"
+              placeholder="Smith"
+              class="input-field"
+            />
+          </div>
+          <div class="col-half">
+            <label for="first_name">Gender</label>
+            <label class="radio-inline">
+              <input
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+              Male
+            </label>
+            <label class="radio-inline">
+              <input
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+              Female
+            </label>
+          </div>
+        </div>
+        <div class="full-width">
+          <div class="col-full">
+            <label for="first_name">Select Tests</label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1" />
+              Obesity Management
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2" />
+              Health DNA
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3" />
+              DNA skin
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1" />
+              Obesity Management
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2" />
+              Health DNA
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3" />
+              DNA skin
+            </label>
+          </div>
+        </div>
+        <div class="full-width">
+          <div class="col-full">
+            <input class="btn btn-submit" type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
