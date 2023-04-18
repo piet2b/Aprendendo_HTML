@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cozinha moderna</title>
+    <style>
+      .quadrado {
+        display: flex;
+      }
+      .card {
+        border-radius: 20px;
+        margin-left: 10px;
+        height: 200px;
+        background-color: rosybrown;
+        flex: 1;
+        transition: all 3s ease-out;
+      }
+      .card2:hover {
+        flex: 2;
+        background-color: brown;
+      }
+      .cabeçalho {
+        border-style: solid;
+        border-radius: 50px;
+        text-align: center;
+      }
+      .menu {
+        list-style: none;
+        border: 1px solid;
+        float: left;
+        border-radius: 50px;
+      }
+      .menu li {
+        position: relative;
+        float: left;
+        border-right: 1px solid;
+      }
+      .menu li a {
+        color: rosybrown;
+        text-decoration: none;
+        padding: 5px 10px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="cabeçalho">MAYTAG</h1>
+    <nav class="menu">
+      <li><a href="Produtos">Produtos</a></li>
+      <li><a href="Produtos">Contatos</a></li>
+      <li><a href="Produtos">Sobre</a></li>
+      <li><a href="Produtos">Home</a></li>
+    </nav>
+    <br /><br />
+    <div class="quadrado">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </body>
+</html>
