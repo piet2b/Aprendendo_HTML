@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(4, 15, 65);
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid rgb(4, 15, 65);
+        border-collapse: collapse;
+        padding: 10px;
+        font-weight: bold;
+        color: rgb(4, 15, 65);
+      }
+
+      table {
+        margin: auto;
+      }
+
+      img {
+        width: 100px;
+        border-radius: 4px;
+      }
+
+      th {
+        border-bottom-color: white;
+        background-color: rgb(4, 15, 65);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Perfil Profissional</h1>
+    <table>
+      <tbody>
+        <tr>
+          <th>Nome</th>
+          <td style="border-right: none">Larissa Rodrigues</td>
+          <td style="border-left: none">
+            <img src="img/foto-perfil.jpg" alt="Foto da candidata" />
+          </td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td colspan="2">larissa.rodrigues@gmail.com</td>
+        </tr>
+        <tr>
+          <th>CPF</th>
+          <td colspan="2">298.496.053-08</td>
+        </tr>
+        <tr>
+          <th rowspan="3">Telefones</th>
+          <td colspan="2">(85) 99854758</td>
+        </tr>
+        <tr>
+          <td colspan="2">(85) 99854758</td>
+        </tr>
+        <tr>
+          <td colspan="2">(85) 99854758</td>
+        </tr>
+        <tr>
+          <th>Nascimento</th>
+          <td colspan="2">25/11/2000</td>
+        </tr>
+        <tr>
+          <th>Escolaridade</th>
+          <td colspan="2">Superior Completo</td>
+        </tr>
+        <tr>
+          <th style="border-color: rgb(4, 15, 65)">Genero</th>
+          <td colspan="2">F</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
